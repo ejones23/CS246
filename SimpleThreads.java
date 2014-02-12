@@ -12,7 +12,7 @@ public class SimpleThreads {
 
     private static class MessageLoop
         implements Runnable {
-        public void run() {
+        public synchronized void run() {
             String importantInfo[] = {
                 "Mares eat oats",
                 "Does eat oats",
